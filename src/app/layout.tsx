@@ -36,7 +36,7 @@ export default function RootLayout({
                 <User size={20} />
               </button>
               <button className="p-2 text-gray-600 hover:text-gray-900 transition-colors">
-              <a href="/cart"><ShoppingCart size={20} /></a>
+              <ShoppingCart size={20} href="/cart"/>
               </button>
             </div>
           </div>
