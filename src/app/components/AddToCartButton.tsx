@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-export default function AddToCartButton({ productId }: { productId: number }) {
+export default function AddToCartButton({  }: { productId: number }) {
   const [isAdding, setIsAdding] = useState(false)
   const router = useRouter()
 
