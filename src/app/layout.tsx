@@ -21,15 +21,15 @@ export default function RootLayout({
         <nav className="fixed w-full z-50 bg-white/80 border-b-2 border-gray-800 backdrop-blur-sm">
           <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
             <div className="flex items-center space-x-8">
-              <a href="/" className="text-gray-800 text-xl font-semibold">
+              <Link href="/" className="text-gray-800 text-xl font-semibold">
                 DriveHub
-              </a>
-              <a href="/products" className="text-gray-600 hover:text-gray-900 transition-colors">
+              </Link>
+              <Link href="/products" className="text-gray-600 hover:text-gray-900 transition-colors">
                 Discovery
-              </a>
-              <a href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
+              </Link>
+              <Link href="/about" className="text-gray-600 hover:text-gray-900 transition-colors">
                 About
-              </a>
+              </Link>
             </div>
             <div className="flex items-center space-x-4">
               <button className="p-2 text-gray-600 hover:text-gray-900 transition-colors">
