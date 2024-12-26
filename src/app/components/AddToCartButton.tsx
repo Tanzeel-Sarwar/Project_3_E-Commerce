@@ -1,19 +1,18 @@
 'use client'
 
 import { useState } from 'react'
-import { useRouter } from 'next/navigation'
+import { useCart } from '@/lib/CartContext'
+import { Product } from '@/lib/products'
 
-export default function AddToCartButton({ productId }: { productId: number }) {
+export default function AddToCartButton({ product }: { product: Product }) {
   const [isAdding, setIsAdding] = useState(false)
-  const router = useRouter()
+  const { addToCart } = useCart()
 
   const handleAddToCart = () => {
     setIsAdding(true)
-    // Simulate adding to cart
+    addToCart(product)
     setTimeout(() => {
-      console.log(`Added product ${productId} to cart`)
       setIsAdding(false)
-      router.push('/cart')
     }, 1000)
   }
 

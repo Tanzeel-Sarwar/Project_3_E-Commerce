@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image"
 
 export default function AboutPage() {
     return (
@@ -18,13 +18,13 @@ export default function AboutPage() {
                 <div>
                     <h2 className="text-2xl font-light mb-4">Our Story</h2>
                     <p className="mb-4">
-                        At <b>DriveHub</b>, we’re passionate about all things automotive. Whether you're a car enthusiast, a casual driver, or just looking for expert advice, we’re here to fuel your love for cars. From in-depth reviews and buying guides to the latest trends and tips, we provide the resources you need to make informed decisions and enjoy the ride.
+                        At <b>DriveHub</b>, we&#39;re passionate about all things automotive. Whether you&#39;re a car enthusiast, a casual driver, or just looking for expert advice, we &#39; re here to fuel your love for cars. From in-depth reviews and buying guides to the latest trends and tips, we provide the resources you need to make informed decisions and enjoy the ride.
                     </p>
                     <p className='mb-4'>
-                        DriveHub isn’t just a website – it's a community for people who share a common passion for cars. Join us as we explore everything from performance machines to everyday rides, and connect with fellow drivers along the way.
+                        DriveHub isn&#39;t just a website &hyphen; it&#39;s a community for people who share a common passion for cars. Join us as we explore everything from performance machines to everyday rides, and connect with fellow drivers along the way.
                     </p>
                     <p>
-                        Welcome to <b>DriveHub</b> – your ultimate car destination.
+                        Welcome to <b>DriveHub</b> &hyphen; your ultimate car destination.
                     </p>
                 </div>
             </div>

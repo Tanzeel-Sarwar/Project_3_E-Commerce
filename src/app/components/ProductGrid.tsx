@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Image from 'next/image'
 import { products } from '@/lib/products'
 
 export default function ProductGrid() {
@@ -17,19 +18,19 @@ export default function ProductGrid() {
           className="group cursor-pointer"
         >
           <Link href={`/products/${product.id}`} className="block">
-            <div className={`aspect-square rounded-lg ${product.color} mb-4 transition-all duration-200 group-hover:shadow-lg overflow-hidden`}>
-              <div className="w-full h-full flex items-center justify-center p-6">
-                <motion.img
+            <div className={`aspect-square rounded-lg ${product.color} mb-4 transition-all duration-300 group-hover:shadow-lg overflow-hidden`}>
+              <motion.div className="w-full h-full relative">
+                <Image
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-contain"
-                  whileHover={{ scale: 1.1 }}
-                  transition={{ duration: 0.3 }}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-              </div>
+              </motion.div>
             </div>
-            <h3 className="text-gray-900 mb-1">{product.name}</h3>
-            <p className="text-gray-700">${product.price.toFixed(2)}</p>
+            <h3 className="text-gray-800 font-light mb-2">{product.name}</h3>
+            <p className="text-emerald-600">${product.price.toFixed(2)}</p>
           </Link>
         </motion.div>
       ))}

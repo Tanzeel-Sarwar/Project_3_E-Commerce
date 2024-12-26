@@ -12,7 +12,7 @@ export interface Product {
       id: 1, 
       name: 'Toyota Fortuner', 
       price: 9.99, 
-      color: 'bg-gray-500',
+      color: 'bg-black',
       image: '/images/car1.png',
       description: "A rugged and reliable SUV, the Toyota Fortuner blends off-road capability with on-road comfort, making it a top choice for adventure seekers."
     },
