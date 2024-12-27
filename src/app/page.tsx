@@ -1,7 +1,4 @@
 import ProductGrid from '@/app/components/ProductGrid'
-import Link from 'next/link'
-
-
 
 export default function Home() {
   return (
