@@ -18,11 +18,9 @@ export default function Home() {
           <p className="lg:text-lg text-[14px] md:text-[16px] mb-8 text-[#a2a8b3]">
             Your Ultimate Destination for Car Buying & Beyond
           </p>
-          <a href="/products">
             <button className="bg-gray-800 text-white lg:text-lg text-sm lg:px-8 lg:py-3 px-5 py-3 rounded-full hover:bg-gray-500 hover:text-black  transition-color duration-500">
               Discover our collection
             </button>
-          </a>
         </div>
       </section>
 
