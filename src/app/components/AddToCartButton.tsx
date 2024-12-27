@@ -20,7 +20,7 @@ export default function AddToCartButton({ product }: { product: Product }) {
     <button
       onClick={handleAddToCart}
       disabled={isAdding}
-      className="bg-emerald-500 text-white px-6 py-2 rounded-full hover:bg-emerald-600 transition-colors disabled:bg-emerald-300"
+      className="bg-gray-800 text-white px-6 py-2 rounded-full hover:bg-gray-600 transition-colors disabled:bg-gray-400"
     >
       {isAdding ? 'Adding...' : 'Add to Cart'}
     </button>

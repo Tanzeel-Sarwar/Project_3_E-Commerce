@@ -24,28 +24,28 @@ export default function CheckoutPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-light mb-8">Checkout</h1>
+    <div className="container mx-auto px-12 py-8">
+      <h1 className="lg:text-2xl md:text-2xl text-[22px] mb-8">Checkout</h1>
       {cartItems.length === 0 ? (
         <p>Your cart is empty. Please add some items before checking out.</p>
       ) : (
         <>
           <div className="mb-8">
-            <h2 className="text-2xl font-light mb-4">Order Summary</h2>
+            <h2 className="lg:text-[21px] md:text-[20px] text-lg font-light mb-4">Order Summary</h2>
             {cartItems.map((item) => (
               <div key={item.id} className="flex justify-between items-center mb-2">
                 <span>{item.name} x {item.quantity}</span>
                 <span>${(item.price * item.quantity).toFixed(2)}</span>
               </div>
             ))}
-            <div className="text-xl font-semibold mt-4">
+            <div className="lg:text-xl md:text-[18px] text-[16px] font-semibold mt-4">
               Total: ${total.toFixed(2)}
             </div>
           </div>
           <button
             onClick={handleCheckout}
             disabled={isProcessing}
-            className="w-full bg-emerald-500 text-white px-6 py-3 rounded-full hover:bg-emerald-600 transition-colors disabled:bg-emerald-300"
+            className="justify-self-center bg-gray-800 text-white lg:px-6 md:px-6 px-3 py-2 rounded-full hover:bg-gray-600 transition-colors disabled:bg-gray-400"
           >
             {isProcessing ? 'Processing...' : 'Complete Order'}
           </button>

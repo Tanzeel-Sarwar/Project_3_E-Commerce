@@ -24,13 +24,13 @@ export default function ProductGrid() {
                   src={product.image}
                   alt={product.name}
                   fill
-                  className="object-contain"
+                  className="object-contain "
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </motion.div>
             </div>
-            <h3 className="text-gray-800 font-light mb-2">{product.name}</h3>
-            <p className="text-emerald-600">${product.price.toFixed(2)}</p>
+            <h3 className="text-gray-800 mb-2">{product.name}</h3>
+            <p className="text-green-600">${product.price.toFixed(2)}</p>
           </Link>
         </motion.div>
       ))}

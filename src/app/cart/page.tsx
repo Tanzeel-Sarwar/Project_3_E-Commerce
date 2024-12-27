@@ -15,8 +15,8 @@ export default function CartPage() {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-light mb-8">Your Cart</h1>
+    <div className="container mx-auto px-10 py-8">
+      <h1 className="lg:text-2xl md:text-2xl text-xl mb-8">Your Cart</h1>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
@@ -34,8 +34,8 @@ export default function CartPage() {
                   />
                 </div>
                 <div>
-                  <h2 className="text-xl font-light">{item.name}</h2>
-                  <p className="text-emerald-600">${item.price.toFixed(2)} x {item.quantity}</p>
+                  <h2 className="lg:text-xl md:text-xl text-lg font-light">{item.name}</h2>
+                  <p className="text-green-600">${item.price.toFixed(2)} x {item.quantity}</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -44,11 +44,11 @@ export default function CartPage() {
                   min="1"
                   value={item.quantity}
                   onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
-                  className="w-16 px-2 py-1 border rounded mr-4"
+                  className=" lg:w-16 md:w-16 w-12 px-2 py-1 border rounded mr-4"
                 />
                 <button
                   onClick={() => removeFromCart(item.id)}
-                  className="text-red-500 hover:text-red-700"
+                  className="text-red-500 lg:text-[16px] md:text-sm text-sm hover:text-red-700"
                 >
                   Remove
                 </button>
@@ -56,10 +56,10 @@ export default function CartPage() {
             </div>
           ))}
           <div className="mt-8">
-            <p className="text-2xl font-light">Total: ${total.toFixed(2)}</p>
+            <p className="lg:text-xl md:text-xl text-lg">Total: ${total.toFixed(2)}</p>
             <button 
               onClick={handleProceedToCheckout}
-              className="mt-4 bg-emerald-500 text-white px-6 py-2 rounded-full hover:bg-emerald-600 transition-colors"
+              className="mt-4 bg-gray-800 text-white lg:px-6 md:px-5 px-3 py-2 rounded-full hover:bg-gray-600 transition-colors lg:text-sm md:text-sm text-[14px]"
             >
               Proceed to Checkout
             </button>
